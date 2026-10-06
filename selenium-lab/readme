@@ -1,0 +1,9 @@
+cd ..
+mkdir selenium-lab
+cd selenium-lab
+python3 -m venv venv
+source .venv/bin/activate          
+pip install selenium pytest pytest-html
+
+1. Create test_event_app.py inside selenium-lab with the program above.
+2. With the container still running, run the tests: pytest test_event_app.py -v --html=report.html --self-contained-html.
