@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest 2026 - Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TechFest 2026</h1>
+    <p class="sub">Event Registration Form</p>
+    <form id="regForm" novalidate>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="name@example.com">
+      <label for="phone">Mobile Number</label>
+      <input type="tel" id="phone" placeholder="10-digit mobile number">
+      <label for="college">College</label>
+      <input type="text" id="college" placeholder="College name">
+      <label for="event">Select Event</label>
+      <select id="event">
+        <option value="">-- Choose an event --</option>
+        <option>Hackathon</option>
+        <option>Paper Presentation</option>
+        <option>Coding Contest</option>
+        <option>Robotics Workshop</option>
+      </select>
+      <p id="error" class="error"></p>
+      <button type="submit" id="registerBtn">Register</button>
+      <button type="reset" class="reset">Clear</button>
+    </form>
+    <div id="success" class="success"></div>
+
+    <h3>Registered Participants (<span id="count">0</span>)</h3>
+    <table id="regTable">
+      <thead><tr><th>#</th><th>Name</th><th>Event</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <p class="host">Served by: <span id="host">-</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
